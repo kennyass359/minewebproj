@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .about-me, .about-work {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f8f8f8;
+        }
+        .about-me h2, .about-work h2 {
+            margin-top: 0;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .about-me, .about-work {
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на мой сайт</h1>
+    </header>
+    <div class="container">
+        <div class="main">
+            <div class="about-me">
+                <h2>Обо мне</h2>
+                <p>Меня зовут Васильев Михаил. Я учился в ЧЭМК. В свободное время я люблю ходить в бассейн, гулять на свежем воздухе, готовить вкусные блюда и слушать музыку. Эти занятия помогают мне расслабиться и насладиться жизнью.</p>
+            </div>
+            <div class="about-work">
+                <h2>Моя работа</h2>
+                <p>Я работаю в компании Яндекс Путешествия. Я тот чувак, который делает статьи, красиво их оформляет, следит за датами публикации и проверяет документы. Моя работа заключается в создании качественного контента, который будет полезен и интересен нашим пользователям. Я уделяю большое внимание деталям и всегда стремлюсь к совершенству в каждой статье.</p>
+            </div>
+        </div>
+        <a href="company.html" class="button">О моей компании</a>
+    </div>
+</body>
+</html>
